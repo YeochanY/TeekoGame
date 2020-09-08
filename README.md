@@ -1,6 +1,6 @@
 # TeekoGame
-User can play teeko board game with AI opponent.\
-AI opponent is implemented by MiniMax algorithm.
+Users can play a teeko board game with an AI opponent.\
+AI opponent is implemented by the MiniMax algorithm.
 
 ## How to play Teeko
 ![](https://github.com/YeochanYoun119/TeekoGame/blob/master/20200831_005723.jpg?raw=true)\
@@ -13,15 +13,15 @@ to an adjacent space only!—until one player wins.
 
 # MiniMax algorithm
 Minimax algorithm is decesion making rule used in AI. The algorithm analyzes worst case senario and minimizing the loss. In this program which is two player [zero-sum game](https://en.wikipedia.org/wiki/Zero-sum_game), AI player assumes each player plays optimally everytime and check next few possible game states to make a best decision.\
-You can find more about here. [Minimax algorithm](https://en.wikipedia.org/wiki/Minimax)
+You can find more about the algorithm here. [Minimax algorithm](https://en.wikipedia.org/wiki/Minimax)
 
 ## Heuristic
-When AI checks possible successor game states to make a decision, it might take too long time if AI tries to check all the game states. Therefore, I used heuristic values to check the states. program assumes that the state which is closest shape to win has highest heuristic. By following heuristic value rule, program checks all the possible successor states of next 3 truns and make decision by 2 seconds. 
+When AI checks possible successor game states to make a decision, it might take too long time if AI tries to check all the game states. Therefore, I used heuristic values to check the states. The program assumes that the state which is closest shape to win has the highest heuristic. By following heuristic value rule, program checks all the possible successor states of next 3 turns and make a decision by 2 seconds. 
 
 # How to play the game
 Board will displayed by 0-4 rows and A-E coloumns (5x5 board).
 program randomly pickes the color of the user.\
-Black color plays first. First 4 turns, pick places to drop the markers.\
+Black color plays first. For the first 4 turns, pick places to drop the markers.\
 User can type the position where to play by coloum and row order. EX: C1 (This will play 3rd coloum and 2nd row)  
 After drop phase, starts to move the markers by Teeko rules.\
 Players have to make winning shape earlier than AI to win the game.\
