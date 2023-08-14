@@ -1,12 +1,3 @@
-'''
-Title:           Game AI
-Files:           teeko_player.py
-Course:          CS540, Spring 2020
-
-Author:          Yeochan Youn
-Email:           yyoun5@wisc.edu
-'''
-
 import copy
 import numpy as np
 import random
